@@ -340,7 +340,3 @@ function loading(text){
 function loading_close(){
 	swal.close();
 }
-
-
-//在线情况
-$.post(window.location.href, { online: 1 });
