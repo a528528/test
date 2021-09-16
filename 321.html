@@ -1,167 +1,151 @@
 <!DOCTYPE html>
 <!-- saved from url=(0031)http://bbs.hyphp.cn/t/7716.html -->
-<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
-	<meta name="viewport" content="width=device-width, user-scalable=yes">
-	<title>hybbs论坛背景添加测试 - Powered by HYBBS</title>
-	<meta name="keywords" content="HYBBS,HYPHP,HYBBS论坛,开源论坛,php论坛,轻论坛">
-	<meta name="description" content="大概效果是这样的过几天发了">
-	<link rel="shortcut icon" href="http://bbs.hyphp.cn/favicon.ico">
-	<link rel="stylesheet" href="./321_files/iconfont.css">
-	<link rel="stylesheet" href="./321_files/app.css">
-	<link rel="stylesheet" href="./321_files/public.css">
-	<script>
-	var www = "http://bbs.hyphp.cn/";
-	var WWW = "http://bbs.hyphp.cn/";
-	var exp = "/";
-	</script>
-	<!--[if (gte IE 9)|!(IE)]><!-->
-	<script src="./321_files/jquery.min.js.下载"></script>
-	<!--<![endif]-->
-	<!--[if lte IE 8 ]>
-	<script src="http://bbs.hyphp.cn/public/js/jquery1.11.3.min.js"></script>
-	<![endif]-->
-	<script src="./321_files/jquery.darktooltip.js.下载"></script>
-	<script src="./321_files/app.js.下载"></script>
+<html lang="zh-cn">
 
-		<script src="./321_files/app.js(1).下载"></script>
-	
-	<style type="text/css">
-		
-				.content td{
-word-wrap:break-word;word-break:break-all;
-}
-.post-content video{
-max-width:100%
-}
-.thread-content video{
-max-width:100%
-}		
-	</style>
-
-	
-</head>
-<body>
-<header>
-	<div id="header" class="container">
-		<a style="color:#0f88eb;font-size: 26px;" href="http://bbs.hyphp.cn/">HYBBS</a>
-		<nav>
-																								<a href="http://app.hyphp.vip/" target="_blank">HYAPP应用中心</a>
-					
-														<a href="http://bbs.hyphp.vip/index/doc" target="_blank">API开发文档</a>
-					
-														<a href="http://bbs.hyphp.vip/index/omg">HYBBS授权</a>
-					
-														<a href="http://bbs.hyphp.vip/index/ser">技术支持</a>
-					
-									</nav>
-		<form method="get" action="http://bbs.hyphp.cn/search.html" class="searchBar">
-			<input type="hidden" name="s" value="search">
-			<div data-reactid="20">
-				<div class="Popover">
-					<div class="searchBar-input ">
-						<input type="text" name="key" value="" autocomplete="off" placeholder="搜索帖子，用户">
-							<button class="btn" aria-label="搜索" type="submit">
-							<svg viewBox="0 0 16 16" class="Icon Icon--search" style="height:16px;width:16px;" width="16" height="16" aria-hidden="true" data-reactid="26"><title></title><g><path d="M12.054 10.864c.887-1.14 1.42-2.57 1.42-4.127C13.474 3.017 10.457 0 6.737 0S0 3.016 0 6.737c0 3.72 3.016 6.737 6.737 6.737 1.556 0 2.985-.533 4.127-1.42l3.103 3.104c.765.46 1.705-.37 1.19-1.19l-3.103-3.104zm-5.317.925c-2.786 0-5.053-2.267-5.053-5.053S3.95 1.684 6.737 1.684 11.79 3.95 11.79 6.737 9.522 11.79 6.736 11.79z"></path></g></svg>
-							</button>
-						
-					</div>
-				</div>
-			</div>
-		</form>
-
-		<div class="pull-right menu-box">
-							<a href="http://bbs.hyphp.cn/user/login.html" style="margin-right: 5px;" class="btn">登录</a>
-				<a href="http://bbs.hyphp.cn/user/add.html" style="margin-right: 5px;" class="btn btn-primary">注册</a>
-				
-						
-		</div>
-	</div>
-</header>
-
-<div class="container" style="margin-top: 23px;">
-	<div class="left">
-		<div class="wrap-box">
-			<a href="http://bbs.hyphp.cn/">论坛首页</a>
-									<span class="grey1"> &gt; </span> 
-			<a href="http://bbs.hyphp.cn/f/0.html">谈天说地</a>
-		</div>
-		<div class="wrap-box t-info">
-			<div class="head">
-		        <h1>
-		        	hybbs论坛背景添加测试		        			        			        </h1>
-		        <div class="meta">
-				<a href="http://bbs.hyphp.cn/u/xsz123.html" target="_blank">
-					xsz123				</a>
-				&nbsp;&nbsp;·&nbsp;&nbsp;
-				发表于 19小时前				&nbsp;&nbsp;·&nbsp;&nbsp;
-				<a href="http://bbs.hyphp.cn/f/0.html">
-					谈天说地				</a>
-		        </div>
-		        <a href="http://bbs.hyphp.cn/u/xsz123.html" class="avatar" target="_blank">
-					<img src="./321_files/33fd82d3d8d775c7241091acfe33ab58-b.jpg" pos="left" width="60" height="60" class="circle js-info" uid="16184" style="cursor: pointer;">
-		        </a>
-		      </div>
-		      <div class="content typo editor-style thread-content">
-		        
-		        					<p><img src="./321_files/ef1b7a0432d99ae5f148e9dbd673c297.jpg">大概效果是这样的过几天发了<br></p>		        		        
-		      </div>
-		      <div class="actions">
-				<button class="btn btn-info" onclick="tp(&#39;thread1&#39;,7716,this)">
-					<i class="iconfont icon-thumbsup1"></i> <span>0</span>
-				</button>
-				<button class="btn btn-info" onclick="tp(&#39;thread2&#39;,7716,this)">
-					<i class="iconfont icon-thumbsdown1"></i> <span>0</span>
-				</button>
-				<div style="width: 10px;display: inline-block;"></div>
-						        
-		        
-			</div>
-					</div>
-				<div class="wrap-box comment-list">
-			<div class="head">
-				0 条回复 &nbsp;
-				<span class="grey">|</span>
-				&nbsp;直到 19小时前				<span class="grey">|</span>
-				21 次浏览					        </div>
-	        	        		</div>
-		<div class="wrap-box">
-			
-<div class="page-box">
-
-
-
-</div>
-
-
-<style type="text/css">
-
-    
-    .page-box{
-        
-       margin: 0 auto;
-    left: 0;
-    top: 0;
-    text-align: center;
-    right: 0;
-    bottom: 0;
-
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>修改网站标题</title>
+    <meta name="keywords" content="HYBBS,HYPHP,HYBBS论坛,开源论坛,php论坛,轻论坛">
+    <meta name="description" content="大概效果是这样的过几天发了">
+    <link rel="shortcut icon" href="http://bbs.hyphp.cn/favicon.ico">
+    <link rel="stylesheet" href="./321_files/iconfont.css">
+    <link rel="stylesheet" href="./321_files/app.css">
+    <link rel="stylesheet" href="./321_files/public.css">
+    <script>
+        var www = "http://bbs.hyphp.cn/";
+    var WWW = "http://bbs.hyphp.cn/";
+    var exp = "/";
+    </script>
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="./321_files/jquery.min.js.下载"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://bbs.hyphp.cn/public/js/jquery1.11.3.min.js"></script>
+    <![endif]-->
+    <script src="./321_files/jquery.darktooltip.js.下载"></script>
+    <script src="./321_files/app.js.下载"></script>
+    <script src="./321_files/app.js(1).下载"></script>
+    <style type="text/css">
+    .content td {
+        word-wrap: break-word;
+        word-break: break-all;
     }
-</style>
-<!--
 
-			<a href="javascript:void(0);"  class="btn bg-primary disabled" >上一页</a>
-			<a href="javascript:void(0);" class="btn bg-primary large pull-right disabled" >下一页</a>
-			
+    .post-content video {
+        max-width: 100%
+    }
+
+    .thread-content video {
+        max-width: 100%
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="container">
+            <a style="color:#0f88eb;font-size: 26px;" href="http://bbs.hyphp.cn/">HYBBS</a>
+            <nav>
+                <a href="http://app.hyphp.vip/" target="_blank">HYAPP应用中心</a>
+                <a href="http://bbs.hyphp.vip/index/doc" target="_blank">API开发文档</a>
+                <a href="http://bbs.hyphp.vip/index/omg">HYBBS授权</a>
+                <a href="http://bbs.hyphp.vip/index/ser">技术支持</a>
+            </nav>
+            <form method="get" action="http://bbs.hyphp.cn/search.html" class="searchBar">
+                <input type="hidden" name="s" value="search">
+                <div data-reactid="20">
+                    <div class="Popover">
+                        <div class="searchBar-input ">
+                            <input type="text" name="key" value="" autocomplete="off" placeholder="搜索帖子，用户">
+                            <button class="btn" aria-label="搜索" type="submit">
+                                <svg viewBox="0 0 16 16" class="Icon Icon--search" style="height:16px;width:16px;" width="16" height="16" aria-hidden="true" data-reactid="26">
+                                    <title></title>
+                                    <g>
+                                        <path d="M12.054 10.864c.887-1.14 1.42-2.57 1.42-4.127C13.474 3.017 10.457 0 6.737 0S0 3.016 0 6.737c0 3.72 3.016 6.737 6.737 6.737 1.556 0 2.985-.533 4.127-1.42l3.103 3.104c.765.46 1.705-.37 1.19-1.19l-3.103-3.104zm-5.317.925c-2.786 0-5.053-2.267-5.053-5.053S3.95 1.684 6.737 1.684 11.79 3.95 11.79 6.737 9.522 11.79 6.736 11.79z"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="pull-right menu-box">
+                <a href="http://bbs.hyphp.cn/user/login.html" style="margin-right: 5px;" class="btn">登录</a>
+                <a href="http://bbs.hyphp.cn/user/add.html" style="margin-right: 5px;" class="btn btn-primary">注册</a>
+            </div>
+        </div>
+    </header>
+    <div class="container" style="margin-top: 23px;">
+        <div class="left">
+            <div class="wrap-box">
+                <a href="http://bbs.hyphp.cn/">改链接</a>
+                <span class="grey1"> &gt; </span>
+                <a href="http://bbs.hyphp.cn/f/0.html">休息休息</a>
+            </div>
+            <div class="wrap-box t-info">
+                <div class="head">
+                    <h1>
+                        hybbs论坛背景添加测试 </h1>
+                    <div class="meta">
+                        <a href="http://bbs.hyphp.cn/u/xsz123.html" target="_blank">
+                            xsz123 </a>
+                        &nbsp;&nbsp;·&nbsp;&nbsp;
+                        发表于 19小时前 &nbsp;&nbsp;·&nbsp;&nbsp;
+                        <a href="http://bbs.hyphp.cn/f/0.html">
+                            谈天说地 </a>
+                    </div>
+                    <a href="http://bbs.hyphp.cn/u/xsz123.html" class="avatar" target="_blank">
+                        <img src="./321_files/33fd82d3d8d775c7241091acfe33ab58-b.jpg" pos="left" width="60" height="60" class="circle js-info" uid="16184" style="cursor: pointer;">
+                    </a>
+                </div>
+                <div class="content typo editor-style thread-content">
+                    <p><img src="./321_files/ef1b7a0432d99ae5f148e9dbd673c297.jpg">大概效果是这样的过几天发了<br></p>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-info" onclick="tp(&#39;thread1&#39;,7716,this)">
+                        <i class="iconfont icon-thumbsup1"></i> <span>0</span>
+                    </button>
+                    <button class="btn btn-info" onclick="tp(&#39;thread2&#39;,7716,this)">
+                        <i class="iconfont icon-thumbsdown1"></i> <span>0</span>
+                    </button>
+                    <div style="width: 10px;display: inline-block;"></div>
+                </div>
+            </div>
+            <div class="wrap-box comment-list">
+                <div class="head">
+                    0 条回复 &nbsp;
+                    <span class="grey">|</span>
+                    &nbsp;直到 19小时前 <span class="grey">|</span>
+                    21 次浏览 </div>
+            </div>
+            <div class="wrap-box">
+                <div class="page-box">
+                </div>
+                <style type="text/css">
+                .page-box {
+
+                    margin: 0 auto;
+                    left: 0;
+                    top: 0;
+                    text-align: center;
+                    right: 0;
+                    bottom: 0;
+
+                }
+                </style>
+                <!--
+
+            <a href="javascript:void(0);"  class="btn bg-primary disabled" >上一页</a>
+            <a href="javascript:void(0);" class="btn bg-primary large pull-right disabled" >下一页</a>
+            
 -->
-
-		</div>
-		<div class="wrap-box">
-			
-<style>
-hide{
+            </div>
+            <div class="wrap-box">
+                <style>
+                    hide{
      padding: 5px 0 5px 10px;
     margin: 15px 0 13px;
     background: #f1f1f1;
@@ -171,68 +155,56 @@ hide{
     color:#b52020;
     }
 </style>
+                <a href="http://bbs.hyphp.cn/user/login.html">登录</a>后才可发表内容
+                <script type="text/javascript" src="./321_files/shCore.js.下载"></script>
+                <script type="text/javascript" src="./321_files/shAutoloader.js.下载"></script>
+                <link rel="stylesheet" type="text/css" href="./321_files/shCoreDefault.css">
+                <script type="text/javascript">
+                function path() {
+                    var args = arguments,
+                        result = [];
+                    for (var i = 0; i < args.length; i++)
+                        result.push(args[i].replace('@', 'http://bbs.hyphp.cn/Plugin/syntaxhighlighter/scripts/'));
+                    return result
+                };
 
-						<a href="http://bbs.hyphp.cn/user/login.html">登录</a>后才可发表内容						
-
-
-<script type="text/javascript" src="./321_files/shCore.js.下载"></script>
-<script type="text/javascript" src="./321_files/shAutoloader.js.下载"></script>
-
-<link rel="stylesheet" type="text/css" href="./321_files/shCoreDefault.css">
-
-
-    
-<script type="text/javascript">
-function path() {
-    var args = arguments, result = [];
-    for (var i = 0; i < args.length; i++)
-        result.push(args[i].replace('@', 'http://bbs.hyphp.cn/Plugin/syntaxhighlighter/scripts/'));
-    return result
-};
-
-SyntaxHighlighter.autoloader.apply(null, path(
-    'applescript            @shBrushAppleScript.js',
-    'actionscript3 as3      @shBrushAS3.js',
-    'bash shell             @shBrushBash.js',
-    'coldfusion cf          @shBrushColdFusion.js',
-    'cpp c                  @shBrushCpp.js',
-    'c# c-sharp csharp      @shBrushCSharp.js',
-    'css                    @shBrushCss.js',
-    'delphi pascal          @shBrushDelphi.js',
-    'diff patch pas         @shBrushDiff.js',
-    'erl erlang             @shBrushErlang.js',
-    'groovy                 @shBrushGroovy.js',
-    'java                   @shBrushJava.js',
-    'jfx javafx             @shBrushJavaFX.js',
-    'js jscript javascript  @shBrushJScript.js',
-    'perl pl                @shBrushPerl.js',
-    'php                    @shBrushPhp.js',
-    'text plain             @shBrushPlain.js',
-    'py python              @shBrushPython.js',
-    'ruby rails ror rb      @shBrushRuby.js',
-    'sass scss              @shBrushSass.js',
-    'scala                  @shBrushScala.js',
-    'sql                    @shBrushSql.js',
-    'vb vbnet               @shBrushVb.js',
-    'xml xhtml xslt html    @shBrushXml.js')
- );
-SyntaxHighlighter.defaults['gutter'] = true;
-SyntaxHighlighter.all();
-
-
-</script>
-<style type="text/css">
-	.syntaxhighlighter table td.code {
-    width: 93% !important;
-}
-</style>
-
-
-      </div>
-	</div>
+                SyntaxHighlighter.autoloader.apply(null, path(
+                    'applescript            @shBrushAppleScript.js',
+                    'actionscript3 as3      @shBrushAS3.js',
+                    'bash shell             @shBrushBash.js',
+                    'coldfusion cf          @shBrushColdFusion.js',
+                    'cpp c                  @shBrushCpp.js',
+                    'c# c-sharp csharp      @shBrushCSharp.js',
+                    'css                    @shBrushCss.js',
+                    'delphi pascal          @shBrushDelphi.js',
+                    'diff patch pas         @shBrushDiff.js',
+                    'erl erlang             @shBrushErlang.js',
+                    'groovy                 @shBrushGroovy.js',
+                    'java                   @shBrushJava.js',
+                    'jfx javafx             @shBrushJavaFX.js',
+                    'js jscript javascript  @shBrushJScript.js',
+                    'perl pl                @shBrushPerl.js',
+                    'php                    @shBrushPhp.js',
+                    'text plain             @shBrushPlain.js',
+                    'py python              @shBrushPython.js',
+                    'ruby rails ror rb      @shBrushRuby.js',
+                    'sass scss              @shBrushSass.js',
+                    'scala                  @shBrushScala.js',
+                    'sql                    @shBrushSql.js',
+                    'vb vbnet               @shBrushVb.js',
+                    'xml xhtml xslt html    @shBrushXml.js'));
+                SyntaxHighlighter.defaults['gutter'] = true;
+                SyntaxHighlighter.all();
+                </script>
+                <style type="text/css">
+                .syntaxhighlighter table td.code {
+                    width: 93% !important;
+                }
+                </style>
+            </div>
+        </div>
         <div class="right" style="float: right;width: 300px;">
-        
-<a href="https://github.com/hyyyp/HYBBS2" target="_bank" class="right-widget only-logo" style="
+            <a href="https://github.com/hyyyp/HYBBS2" target="_bank" class="right-widget only-logo" style="
 display:block;
     text-align: center;
     padding: 10px 0;
@@ -248,13 +220,17 @@ display:block;
     height: 40px;
     margin-right: 9px;
     vertical-align: bottom;
-" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1148" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><defs><style type="text/css"></style></defs><path d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z" p-id="1149"></path></svg><span style="
+" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1148" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+                    <defs>
+                        <style type="text/css"></style>
+                    </defs>
+                    <path d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z" p-id="1149"></path>
+                </svg><span style="
     vertical-align: super;
 ">Github HYBBS2.git</span></a>
-<div class="right-widget only-logo">
-		
-		<div class="items grid" style="padding-bottom: 1px;min-height: 55px;">
-  <a onclick="$(&#39;#down1&#39;).show();$(&#39;#down2&#39;).hide();" href="javascript:;" style="
+            <div class="right-widget only-logo">
+                <div class="items grid" style="padding-bottom: 1px;min-height: 55px;">
+                    <a onclick="$(&#39;#down1&#39;).show();$(&#39;#down2&#39;).hide();" href="javascript:;" style="
     float: left;
     width: 50%;
     padding: 10px;
@@ -263,7 +239,12 @@ display:block;
     position: relative;
 "><svg t="1514714816146" class="icon" style="
     fill: azure;
-" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5719" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><defs><style type="text/css"></style></defs><path d="M895.98704 384.021599c-35.198812 0-63.99784 28.799028-63.99784 63.99784v255.991361c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.997841-63.99784v-255.991361c0-35.198812-28.799028-63.99784-63.997841-63.99784zM128.01296 384.021599c-35.198812 0-63.99784 28.799028-63.997841 63.99784v255.991361c0 35.198812 28.799028 63.99784 63.997841 63.99784s63.99784-28.799028 63.99784-63.99784v-255.991361c0-35.198812-28.799028-63.99784-63.99784-63.99784z m95.99676 351.988121a95.99676 95.99676 0 0 0 95.99676 95.99676v127.99568c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.99784-63.99784v-127.99568h127.99568v127.99568c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.99784-63.99784v-127.99568a95.99676 95.99676 0 0 0 95.99676-95.99676V384.021599H224.00972v351.988121zM798.198341 320.023759a287.798287 287.798287 0 0 0-129.627625-209.624925l32.030919-64.029839a31.99892 31.99892 0 0 0-57.246068-28.639033l-32.126916 64.28583-8.351718-3.327888C574.301897 69.184225 543.742929 64.032399 512 64.032399s-62.301897 5.151826-90.876933 14.655505l-8.351718 3.327888L380.644433 17.729962a31.99892 31.99892 0 0 0-57.246068 28.639033l32.030919 64.029839A287.862285 287.862285 0 0 0 225.801659 320.023759v31.99892H799.99028v-31.99892h-1.791939zM416.00324 256.025919a31.99892 31.99892 0 0 1-0.063998-63.99784h0.159995a31.99892 31.99892 0 0 1-0.063998 63.99784z m191.99352 0a31.99892 31.99892 0 0 1-0.063998-63.99784h0.159995a31.99892 31.99892 0 0 1-0.063998 63.99784z" p-id="5720"></path></svg><span style="
+" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5719" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32">
+                            <defs>
+                                <style type="text/css"></style>
+                            </defs>
+                            <path d="M895.98704 384.021599c-35.198812 0-63.99784 28.799028-63.99784 63.99784v255.991361c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.997841-63.99784v-255.991361c0-35.198812-28.799028-63.99784-63.997841-63.99784zM128.01296 384.021599c-35.198812 0-63.99784 28.799028-63.997841 63.99784v255.991361c0 35.198812 28.799028 63.99784 63.997841 63.99784s63.99784-28.799028 63.99784-63.99784v-255.991361c0-35.198812-28.799028-63.99784-63.99784-63.99784z m95.99676 351.988121a95.99676 95.99676 0 0 0 95.99676 95.99676v127.99568c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.99784-63.99784v-127.99568h127.99568v127.99568c0 35.198812 28.799028 63.99784 63.99784 63.99784s63.99784-28.799028 63.99784-63.99784v-127.99568a95.99676 95.99676 0 0 0 95.99676-95.99676V384.021599H224.00972v351.988121zM798.198341 320.023759a287.798287 287.798287 0 0 0-129.627625-209.624925l32.030919-64.029839a31.99892 31.99892 0 0 0-57.246068-28.639033l-32.126916 64.28583-8.351718-3.327888C574.301897 69.184225 543.742929 64.032399 512 64.032399s-62.301897 5.151826-90.876933 14.655505l-8.351718 3.327888L380.644433 17.729962a31.99892 31.99892 0 0 0-57.246068 28.639033l32.030919 64.029839A287.862285 287.862285 0 0 0 225.801659 320.023759v31.99892H799.99028v-31.99892h-1.791939zM416.00324 256.025919a31.99892 31.99892 0 0 1-0.063998-63.99784h0.159995a31.99892 31.99892 0 0 1-0.063998 63.99784z m191.99352 0a31.99892 31.99892 0 0 1-0.063998-63.99784h0.159995a31.99892 31.99892 0 0 1-0.063998 63.99784z" p-id="5720"></path>
+                        </svg><span style="
     vertical-align: super;
     color: #FFF;
     margin-left: 10px;
@@ -271,7 +252,7 @@ display:block;
     position: absolute;
     top: 17px;
 ">安卓客户端</span></a>
-  <a href="javascript:;" style="
+                    <a href="javascript:;" style="
     float: left;
     width: 50%;
     padding: 10px;
@@ -280,82 +261,84 @@ display:block;
     position: relative;
 " onclick="$(&#39;#down2&#39;).show();$(&#39;#down1&#39;).hide();"><svg t="1514714861455" class="icon" style="
     fill: #535353;
-" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6386" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><defs><style type="text/css"></style></defs><path d="M615.913 183.762c31.803-40.968 55.898-98.81 47.218-157.832-52.08 3.61-112.838 36.802-148.25 79.991-32.36 39.164-58.954 97.353-48.607 153.876 56.94 1.805 115.545-32.15 149.639-76.035zM896.859 739.2c-22.776 50.481-33.677 73.117-62.98 117.835-40.97 62.496-98.603 140.266-170.055 140.822-63.467 0.694-79.854-41.386-165.957-40.9s-104.156 41.733-167.693 41.107c-71.451-0.695-126.03-70.827-166.929-133.32-114.364-174.568-126.376-379.48-55.897-488.498 50.203-77.354 129.294-122.558 203.661-122.558 75.688 0 123.253 41.593 185.956 41.593 60.758 0 97.768-41.663 185.26-41.663 66.245 0 136.447 36.109 186.441 98.603-163.805 89.922-137.278 324.275 28.192 387.047v-0.068h0.001z" fill="" p-id="6387"></path></svg><span style="
+" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6386" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32">
+                            <defs>
+                                <style type="text/css"></style>
+                            </defs>
+                            <path d="M615.913 183.762c31.803-40.968 55.898-98.81 47.218-157.832-52.08 3.61-112.838 36.802-148.25 79.991-32.36 39.164-58.954 97.353-48.607 153.876 56.94 1.805 115.545-32.15 149.639-76.035zM896.859 739.2c-22.776 50.481-33.677 73.117-62.98 117.835-40.97 62.496-98.603 140.266-170.055 140.822-63.467 0.694-79.854-41.386-165.957-40.9s-104.156 41.733-167.693 41.107c-71.451-0.695-126.03-70.827-166.929-133.32-114.364-174.568-126.376-379.48-55.897-488.498 50.203-77.354 129.294-122.558 203.661-122.558 75.688 0 123.253 41.593 185.956 41.593 60.758 0 97.768-41.663 185.26-41.663 66.245 0 136.447 36.109 186.441 98.603-163.805 89.922-137.278 324.275 28.192 387.047v-0.068h0.001z" fill="" p-id="6387"></path>
+                        </svg><span style="
     vertical-align: super;
     color: #535353;
     margin-left: 10px;
     font-size: 16px;
     position: absolute;
     top: 17px;
-">苹果客户端</span></a><div id="down1" style="display: none;"><img src="./321_files/apk.png" style="
+">苹果客户端</span></a>
+                    <div id="down1" style="display: none;"><img src="./321_files/apk.png" style="
     width: 100%;
   
 ">
-<a href="http://bbs.hyphp.cn/app.apk" style="
+                        <a href="http://bbs.hyphp.cn/app.apk" style="
     display: block;
     text-align: center;
     margin: 0px 0 10px;
-" target="_blank">点击手动下载 安卓版</a></div><div id="down2" style="display: none;"><img src="./321_files/ipa.png" style="
+" target="_blank">点击手动下载 安卓版</a></div>
+                    <div id="down2" style="display: none;"><img src="./321_files/ipa.png" style="
     width: 100%;
   
 ">
-<a href="http://bbs.hyphp.cn/app.ipa" style="
+                        <a href="http://bbs.hyphp.cn/app.ipa" style="
     display: block;
     text-align: center;
     margin: 0px 0 10px;
 " target="_blank">点击手动下载 苹果版</a></div>
-</div>
-	</div>
+                </div>
+            </div>
+            <div class="right-widget only-logo">
+                <ul id="right-forum-list">
+                    <li>
+                        <a href="http://bbs.hyphp.cn/">
+                            <img src="./321_files/forum_home.png">
+                            返回首页 <i class="iconfont icon-right2 pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="http://bbs.hyphp.cn/f/0.html">
+                            <img src="./321_files/forum0.png" onerror="this.src=&#39;http://bbs.hyphp.cn/upload/de.png&#39;">
+                            谈天说地 <i class="iconfont icon-right2 pull-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <style>
+            .masked {
+                text-align: center;
+                background-image: -webkit-linear-gradient(left,
+                    #147b96,
+                    #e6d205 25%,
+                    #147b96 50%,
+                    #e6d205 75%,
+                    #147b96);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-background-size: 200% 100%;
+                -webkit-animation: masked-animation 4s infinite linear;
+            }
 
+            @-webkit-keyframes masked-animation {
+                0% {
+                    background-position: 0 0;
+                }
 
-                                        <div class="right-widget only-logo">
-            
-            <ul id="right-forum-list">
-                                <li>
-                    <a href="http://bbs.hyphp.cn/">
-                        <img src="./321_files/forum_home.png">
-                        返回首页 <i class="iconfont icon-right2 pull-right"></i>
-                    </a>
-                </li>
-                                <li>
-                    <a class="active" href="http://bbs.hyphp.cn/f/0.html">
-                        <img src="./321_files/forum0.png" onerror="this.src=&#39;http://bbs.hyphp.cn/upload/de.png&#39;">
-                        谈天说地 <i class="iconfont icon-right2 pull-right"></i>
-                    </a>
-                </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-            </ul>
-        </div>
-                        
-<style>
-  .masked {
-    text-align: center;
-    background-image: -webkit-linear-gradient(
-      left,
-      #147b96,
-      #e6d205 25%,
-      #147b96 50%,
-      #e6d205 75%,
-      #147b96
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-background-size: 200% 100%;
-    -webkit-animation: masked-animation 4s infinite linear;
-  }
-  @-webkit-keyframes masked-animation {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: -100% 0;
-    }
-  }
-</style>
-<div class="right-widget only-logo">
-  <div class="head masked" style="font-size: 20px">手机APP 开发进度</div>
-  <div class="items grid" style="padding-bottom: 1px">
-    <div class="progress" style="
+                100% {
+                    background-position: -100% 0;
+                }
+            }
+            </style>
+            <div class="right-widget only-logo">
+                <div class="head masked" style="font-size: 20px">手机APP 开发进度</div>
+                <div class="items grid" style="padding-bottom: 1px">
+                    <div class="progress" style="
         height: 22px;
         overflow: hidden;
         background-color: #f5f5f5;
@@ -364,7 +347,7 @@ display:block;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
         margin: 10px;
       ">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="
           width: 100%;
           float: left;
           height: 100%;
@@ -412,42 +395,40 @@ display:block;
           background-size: 40px 40px;
           background-color: #5cb85c;
         ">
-        <span class="sr-only">100%</span>
-      </div>
-    </div>
-  </div>
-</div>
+                            <span class="sr-only">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+            .masked {
+                text-align: center;
+                background-image: -webkit-linear-gradient(left,
+                    #147b96,
+                    #e6d205 25%,
+                    #147b96 50%,
+                    #e6d205 75%,
+                    #147b96);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-background-size: 200% 100%;
+                -webkit-animation: masked-animation 4s infinite linear;
+            }
 
+            @-webkit-keyframes masked-animation {
+                0% {
+                    background-position: 0 0;
+                }
 
-<style>
-  .masked {
-    text-align: center;
-    background-image: -webkit-linear-gradient(
-      left,
-      #147b96,
-      #e6d205 25%,
-      #147b96 50%,
-      #e6d205 75%,
-      #147b96
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-background-size: 200% 100%;
-    -webkit-animation: masked-animation 4s infinite linear;
-  }
-  @-webkit-keyframes masked-animation {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: -100% 0;
-    }
-  }
-</style>
-<div class="right-widget only-logo">
-  <div class="head masked" style="font-size: 20px">HYBBS3.0 更新进度</div>
-  <div class="items grid" style="padding-bottom: 1px">
-    <div class="progress" style="
+                100% {
+                    background-position: -100% 0;
+                }
+            }
+            </style>
+            <div class="right-widget only-logo">
+                <div class="head masked" style="font-size: 20px">HYBBS3.0 更新进度</div>
+                <div class="items grid" style="padding-bottom: 1px">
+                    <div class="progress" style="
         height: 22px;
         overflow: hidden;
         background-color: #f5f5f5;
@@ -456,7 +437,7 @@ display:block;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
         margin: 10px;
       ">
-      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="
           width: 90%;
           float: left;
           height: 100%;
@@ -504,172 +485,303 @@ display:block;
           background-size: 40px 40px;
           background-color: #5cb85c;
         ">
-        <span class="sr-only">90%</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="right-widget only-logo">
-	<div class="head">
-		HYBBS最新上传插件
-	</div>
-	<div id="xad1">
-		<ul><li><a target="_blank" href="http://app.hyphp.cn/app/167"><img src="./321_files/a6bfc8ce458ffe126923ea6ef6eba513.jpg">ND_SiteMap<span>一键生成stiemap</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/165"><img src="./321_files/a40d3ec4fb494b1b02fadf184385f61c.jpg">游客访问隐藏帖子内容<span>针对游客隐藏帖子内容。该插件会影响SEO收录，因为蜘蛛也是游客！文章内容隐藏蜘蛛无法获取文章内容</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/164"><img src="./321_files/35a58572a333b8a12e17f8d263a4b41c.jpg">又拍云储存<span>把网站图片和附件上传到又拍云储存</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/161"><img src="./321_files/ba636c5449cc12af3f5ca238883f1ec0.jpg">ND-虚拟数据<span>虚拟数据插件,新发的帖,阅读数据会按照设定的两个数字区间进行随机生成阅读数</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/160"><img src="./321_files/460c65dbcae921a46fd1389cd53b0e49.jpg">邮件发送增强<span>插件用于无法使用25端口发信的服务器，基于PHPMailer-6.1.1开发。​​</span></a></li></ul>
-	</div>
-</div>
-<div class="right-widget only-logo">
-	<div class="head">
-		HYBBS插件库 (<span id="code-count">118</span>)
-	</div>
-	<div id="xad">
-		<ul><li><a target="_blank" href="http://app.hyphp.cn/app/93"><img src="./321_files/6831c6796c5df4fafe63742d8819a57a.jpg">邮箱登陆<span>可以使用邮箱直接登陆</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/149"><img src="./321_files/f1e2ec247d331ea72e8d4cd8fa4d21dc.jpg">[星盟]帖子版权声明<span>这是一个在帖子页面内容的最下方添加版权声明+页面访问二维码的插件，支持电脑和手机双端显示！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/127"><img src="./321_files/dc5ac04d2a064e9c48af12fb08d03a73.jpg">ND-编辑器<span>采用wangeditor开源编辑器实现,轻量级代码,加载很快,支持上传图片缩略图。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/52"><img src="./321_files/6d4602b83f64e715e0498a8d2d766433.jpg">[ZG]微信助手<span>不懂为什么,就是想写个微信插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/31"><img src="./321_files/9e8ecf4eff1382bfaada4db93bc01321.jpg">[ZG]至强·视频播放V1<span>视频播放,目前支持优酷,土豆,QQ三大平台,支持多种视频格式</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/25"><img src="./321_files/7a483da26463bb456810a32e825618fe.jpg">prismjs代码高亮<span>prismjs高亮插件适用于Simditor插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/103"><img src="./321_files/c82a12efc6fd6bd392cdef7a46d4fa0b.jpg">自定义置顶前缀<span>hybbs.tlmsu.com自定义置顶前缀</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/126"><img src="./321_files/9c6a6f431be7ea0563241b3b970ad4c5.jpg">SMTPmail邮件发送插件<span>SMTPmail邮件发送插件,不能发邮件的看过来</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/107"><img src="./321_files/2d13e2dbd4549fac020bd7a40f37c5f9.jpg">部分内容隐藏购买<span>部分内容隐藏购买显示，格式为：隐藏开始（此处内容隐藏）隐藏结束</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/18"><img src="./321_files/c17a0432c79569fde5ecaac28b2ad2de.jpg">RSS<span>RSS2.0 XML标签,该插件有助于SEO以及主题订阅</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/114"><img src="./321_files/c05ac0a1d427324fe9d60911a91056dc.jpg">帖子加精<span>帖子加精！论坛必备插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/94"><img src="./321_files/e6857f763cf076897f9f27faca8cbb6c.jpg">用户名修改<span>用户可以自己修改用户名，从此彻底摆脱单一用户名。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/142"><img src="./321_files/7eead6675ff9bb0cd35ff7762fa0bb4c.jpg">ND-码支付[已下架]<span>扫码支付插件,论坛充值.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/90"><img src="./321_files/3ff192554d404062634d6860f19298c8.jpg">超时禁止回帖<span>将一些时隔已久的老帖子设置禁止回帖</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/72"><img src="./321_files/7e82aae8127451b5265ba065a6018ff1.jpg">微信登陆<span>微信登陆</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/82"><img src="./321_files/7da1def14f161c66cafa79c4db2b26ab.jpg">主题列表缩略图 - 官方模板<span>主题列表显示缩略图</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/137"><img src="./321_files/92eab5eaf3f9e5fac901062a5fba9cd8.jpg">M-TOUCH管理插件<span>M-TOUCH多色手机模板管理插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/139"><img src="./321_files/11e3fa1490aa6db2a55169930da13c34.jpg">网站标题改变<span>给你的网站加一个动态标题效果</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/164"><img src="./321_files/35a58572a333b8a12e17f8d263a4b41c.jpg">又拍云储存<span>把网站图片和附件上传到又拍云储存</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/83"><img src="./321_files/de9083c0663ff62794a21d2d5251ce9d.jpg">文章采集入口<span>文章采集入口接口. 提供一个POST写入方法. 采集API阉割发帖部分功能, 仅保留原生发帖功能! 使用说明看插件配置!</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/91"><img src="./321_files/a512f082c6236e1bd4da7c80633a2fa9.jpg">友情链接<span>从插件配置中配置友情链接,友情链接显示在右侧侧边栏</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/160"><img src="./321_files/460c65dbcae921a46fd1389cd53b0e49.jpg">邮件发送增强<span>插件用于无法使用25端口发信的服务器，基于PHPMailer-6.1.1开发。​​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/23"><img src="./321_files/442409c83f0f56ed93fc1e8940e9db36.jpg">新浪登录<span>新浪微博登录插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/117"><img src="./321_files/f05c2366f76eef81bdb9ef0bec27ed85.jpg">屏蔽回帖<span>屏蔽帖子相关回帖。适用模板hy_boss与手机版。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/161"><img src="./321_files/ba636c5449cc12af3f5ca238883f1ec0.jpg">ND-虚拟数据<span>虚拟数据插件,新发的帖,阅读数据会按照设定的两个数字区间进行随机生成阅读数</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/155"><img src="./321_files/e212a66658c0358849e8a447fce9c968.jpg">[星盟]漂浮广告<span>这是一个在网站内漂浮并自动显示图片类型(可手动点击关闭显示的广告图片)的广告插件，手机版目前正在开发中，和电脑版可能会是不同的样式！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/8"><img src="./321_files/49737d2938dfe9a448e0942c36c958bb.jpg">分页按钮改为数字<span>替换官网模板上下页分页,改为数字按钮</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/133"><img src="./321_files/f5b8c321f18620d76be17107bfe38e9d.jpg">ND-腾讯短信SMS<span>腾讯短信SMS,给网站增加短信注册功能.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/50"><img src="./321_files/70dcf65c2a8767018a6cf7753f67dcd2.jpg">显示子版块帖子<span>显示板块下 所有子版块的帖子, 所有子分类</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/77"><img src="./321_files/74d087819f6553fa510e8f28c9a8ec31.jpg">随机怪兽头像<span>随机怪兽头像，新注册用户将生成一个随机头像。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/10"><img src="./321_files/957c97e914b77b2910ff49abafae8f5d.jpg">QQ登录<span>QQ授权快捷登录, 必须绑定论坛账号,或新注册并绑定.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/100"><img src="./321_files/4889f9e8d9c70ec473bd35e17710a6b4.jpg">web原生分享<span>可以强制唤醒app和调用浏览器分享，支持主流浏览器，分享效果和原生app近乎一样仅支持官方模版和提拉米苏模版。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/128"><img src="./321_files/3150f48ecc03855bec09c71a354c72eb.jpg">失效下架<span>使用BL免签约支付制作的插件，​提现时BL会收取3%的手续费。支持支付宝，微信，QQ付款，本插件的主要功能时充值金币。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/86"><img src="./321_files/e130970dad39e9c3d92baeedaa2e8f99.jpg">[Xso]至强•收藏帖子<span>收藏帖子，论坛必备插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/108"><img src="./321_files/720802cbfb102cc7558a32a9d623e675.jpg">极验验证 APP版<span>​极验验证码,拖动式验证码, 手机APP专用, 配置必须使用geetest3.0 KEY, 否则无法使用!​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/37"><img src="./321_files/083ba363d4f1f527dc0a583bb6e72d67.jpg">[Xso]至强•回帖广告<span>完美的广告位</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/85"><img src="./321_files/6b349bc87278946f3bb36e74e56b174f.jpg">Syntax代码高亮<span>SyntaxHighlighter代码高亮, 自动检测文章是否存在需要高亮代码才加载插件!</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/140"><img src="./321_files/1cbdee12ef3ed810db1d7a2374d5b090.jpg">[星盟]自动生成二维码<span>开启这个插件后，每一个页面都将自动生成一个随机的二维码，通过手机扫一扫即可访问页面！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/88"><img src="./321_files/5b2a30ca4cad9132c3f0ccd7710086e0.jpg">2.0升级固件<span>如果你是1.0版本需要升级到2.0版本,请下载该插件并开启他,回到后台首页,就会提示2.0升级</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/44"><img src="./321_files/4b6f1a4c873fa1fc015acf95b907b01f.jpg">3D仿真云背景<span>3D仿真云背景, 跟随鼠标飘动. 该插件会造成页面出现卡顿! 慎用. 由于太过于屌</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/66"><img src="./321_files/c5172ba491e9abf2d8db64887ab9db3b.jpg">支付宝充值<span>支付宝官方充值接口 充值论坛金币</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/95"><img src="./321_files/f28e6dcd809109567489fd67d1f9640e.jpg">自定义验证码<span>自定义问题答案验证码</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/118"><img src="./321_files/5a7ef8b33b44d609ad5c222097bc7da9.jpg">附件管理器[已失效]<span>管理论坛上传的附件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/54"><img src="./321_files/982df09235924d2b3fc3b47f42347d43.jpg">多域名绑定手机域名绑定模板绑定域名<span>绑定多个域名到程序中. 并且访问时 也会使用进入时的域名, 并且可以对模板进行域名绑定,</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/123"><img src="./321_files/ca3c42fbfd8bec6c909466033beee0dc.jpg">屏蔽IP发帖<span>设置IP禁止发帖，包括无法发表主题，评论，子评论！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/159"><img src="./321_files/a68eda7615027e98b353f7471cca7647.jpg">帖子回收站<span>帖子回收站，前台删除的主题、评论，会进入后台帖子回收站，需要管理员再次进行删除处理。防止用户、版主，误删帖子！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/67"><img src="./321_files/bc5f1e466201d743fff22335793daadd.jpg">压缩上传图片<span>压缩上传图片, 支持云储存, 多图上传, 兼容水印插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/68"><img src="./321_files/4eff7a3837811c1850296b5f7d8d26c5.jpg">上传图片添加水印<span>上传图片添加水印 支持云储存 与压缩图片插件兼容</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/111"><img src="./321_files/daeb8ce97b4c40a27f3ed2fc0b618106.jpg">官方手机APP编辑器<span>手机APP编辑器​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/4"><img src="./321_files/63b99973af33fa94c3a04adc2c3ec236.jpg">图形验证码<span>​图片字母数字验证码,</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/116"><img src="./321_files/4c01009515ff4b035362648bbe2f23b0.jpg">图片懒加载<span>帖子列表懒加载，降低服务器压力，提升用户加载网站速度，并且将移动端图片显示到主题内容下方。目前暂只支持官方移动端模版和提拉米苏模版。特别鸣谢@哄自己玩</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/5"><img src="./321_files/a15c331a2368782a52f47794966d4f3c.jpg">极验<span>极验验证码,拖动式验证码,支持移动端使用,支持用户登录,注册,发表文章以及评论,编辑文章评论显示验证码</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/2"><img src="./321_files/70a66e103b48c9779e0e29e1f9cbc272.jpg">百度推送<span>百度链接提交接口开发的链接推送,每当发表新文章,该文章链接将推送到百度接口,提高收录速度与准确性</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/147"><img src="./321_files/b601dc0b2a74f64e5d4f96f0f3f6a99e.jpg">游客隐藏帖子内容[失效下架]<span>游客隐藏帖子详情插件！针对未注册的游客隐藏全部帖子内容详情！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/148"><img src="./321_files/1f018f8c2d7d75d43cbb9988f09a6a4c.jpg">[星盟]网站右侧工具栏<span>这是一个在在网站右侧显示的右侧工具栏插件（可以放置微信公众号、QQ群号等）！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/92"><img src="./321_files/72db2aaa2f7ddcc8336081d18a8c89ee.jpg">隐藏部分内容<span>​帖子隐藏部分内容 支持过滤用户组,管理员,版主</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/113"><img src="./321_files/cecd3cca7d79d317db1edb2ab69ee71e.jpg">HYBBS 手机APP客户端引擎<span>​HYBBS 手机APP客户端引擎</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/12"><img src="./321_files/510b5f2a65594a333230cdd7d25b33fc.jpg">侧边栏幻灯片<span>侧边栏上的幻灯片 自动切换 圆点小按钮 展示最新回复带有图片的主题</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/14"><img src="./321_files/97d2ff7b6f11876fe0b9cbe8948393fa.jpg">侧边栏-站点统计<span>在侧边栏显示你的站点主题用户帖子数量,今日主题帖子注册用户</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/89"><img src="./321_files/b92c43ba560b4bf33e4a797561f694e5.jpg">超时禁止编辑<span>​文章，评论超过某个设定时间禁止编辑​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/152"><img src="./321_files/c911aaa45fdc85b8828f764c101c13f7.jpg">[星盟]复制内容自动添加版权<span>​这是一个在帖子页面复制了内容后，粘贴到其他地方会自动在内容最后面添加版权声明的插件​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/151"><img src="./321_files/26c2389829255980dac2bd3dd57e402b.jpg">积分兑换物品插件<span>​积分兑换物品!一款让你网站的用户花费一些金币来兑换自己喜欢的物品!</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/21"><img src="./321_files/a3d9894ebc0206e8cafec4edacda76b5.jpg">文章图片点击内部大图<span>在文章页面中,使用鼠标点击图片进行拖动放大</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/145"><img src="./321_files/9ec7cad05f3130fbde1693667c43749e.jpg">HY-MEditor编辑器<span>移动端手机版发表帖子需要用到的富文本编辑器</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/22"><img src="./321_files/2eeeb0e1782b44f0b18d6eb29a382681.jpg">上传图片生成缩略图(勿下)(已失效)<span>对上传图片增加缩略图操作, 每当上传图片都会新建一个自定义尺寸的图片保存</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/65"><img src="./321_files/2149a214bfab061984b66e24e82a25f2.jpg">[ZG]至强•音乐播放<span>至强系列第二个插件,目前仅支持网易云音乐地址,直接在发帖的时候填入网易云音乐地址即可.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/150"><img src="./321_files/2775a1b1df406d7979184354f0c7c2e0.jpg">管理员后台SQL执行<span>后台添加功能  可以运行SQL  便捷管理员操作​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/9"><img src="./321_files/b18864a282b291ea77f7c09ca72b04ac.jpg">七牛云储存<span>对上传图片以及附件转至七牛云储存</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/11"><img src="./321_files/5bab5f4dc5c8633c266dad80200c5960.jpg">用户随机头像<span>用户随机头像，在用户注册账号后取用户名第一位生成头像</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/144"><img src="./321_files/fe26081c5206b565e9d9b3b2fe289401.jpg">HY-Editor编辑器<span>HYBBS默认电脑版发帖编辑器，发表帖子需要用到的富文本编辑器</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/158"><img src="./321_files/4be4bef4364736e521bc30611f48bcd5.jpg">网站底部信息<span>这是一个开启后可以在网站最底部显示底部信息插件，可以显示网站信息，友情链接，设置网站统计，并支持自定义底部背景颜色！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/63"><img src="./321_files/b4d528e23335481f22a03be7dae12521.jpg">百度 UMeditor<span>百度编辑器 迷你版 内核版本:1.2.2 仅用于PC</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/29"><img src="./321_files/cc51cf46963ac0f3b2244a4f15891974.jpg">[Xso]至强•签到<span>每日签到,论坛必备插件,目前版本已经是V1.e,该版本仅仅支持2.0以上的论坛版本,如果你的版本低于2.0,请不要升级</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/75"><img src="./321_files/5f298d5394fb47cfd170f927c85ed7aa.jpg">微信支付<span>微信支付充值金币 支持扫码支付 公众号充值​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/13"><img src="./321_files/c63f810c293b0e921f2cab7891c775b6.jpg">侧边栏-板块列表<span>侧边栏显示你的板块与子版块, 显示板块图标, 方格块展示</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/110"><img src="./321_files/f47f3c37d31e47dcaded405d414e86f6.jpg">阿里云短信服务<span>支持手机号码登录、找回密码、绑定、回帖提醒、回复提醒</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/84"><img src="./321_files/01295b0940b712f1ade1bb2fb2336854.jpg">[ZG]至强•会员推广<span>使会员生成推广链接，其他用户使用链接注册增加积分</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/70"><img src="./321_files/c23fac24e4083b7c682ab9daf3e78a98.jpg">提现<span>金币提现</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/61"><img src="./321_files/f3752fa13e9bb92361a537b5e48d560c.jpg">多语言切换按钮<span>​​​目前插件仅支持PC官方模板, 必须拥有多语言支持的框架版本</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/69"><img src="./321_files/9d1d1fdd235eb35322d498c17ce98fe1.jpg">悬赏帖子<span>悬赏帖子</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/157"><img src="./321_files/162e590f8dc2a86b19d2018783c3cc2d.jpg">Opcache管理<span>插件用于管理Opcache缓存，如果您没有安装Opcache扩展，请勿安装该插件！插件支持库来源于github amnuts/opcache-gui</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/153"><img src="./321_files/b3c259a192b5d2db75a2b489b0afe4bf.jpg">更好的下载页面<span>​下载文件打开一个新的页面下载,你可以尽情的在这里添加文件广告,上下左右,提供广告收益!​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/124"><img src="./321_files/9bf6bea31a0fac98022cfecdb64d4631.jpg">帖子过滤关键字<span>过滤发表主题，评论，子评论敏感关键字</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/51"><img src="./321_files/c1445265f5cc81ec274b24b6428a87d0.jpg">最新回复排最新<span>将最新回复的帖子置新  将筛选条件调换</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/154"><img src="./321_files/4b163c0574e1742193ebacbaf63e7ff6.jpg">渲染采集器<span>渲染采集器!一款多功能内容采集工具!支持网络技术教程、攻略、软件游戏等资源采集!超多资源帖,超多内容! 还支持微信文章采集!后期随着版本的更新!将会增加更多资源采集希望</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/135"><img src="./321_files/0ad2c1cc0c3ef8f1ed8b18b08b665496.jpg">ND-腾讯COS<span>腾讯COS对象储存</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/87"><img src="./321_files/b83a62ac0971f703c3eac103a17dedc8.jpg">[ZG]至强•防灌水<span>限制用户发帖和回帖的时间，论坛防灌水必备插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/53"><img src="./321_files/e612cebde517e9e279c41a8768abc0f2.jpg">主题点赞用户名列表<span>在文章页面点赞记录点赞者, 并显示一个列表在文章下面​</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/146"><img src="./321_files/5f55dde2270f384b973fcf12c7afedcf.jpg">全局通告栏<span>全局通告内容，可多行显示！详情或者使用中有任何问题请到花花的博客反馈！： 花花HYBBS插件之----全站通告栏插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/156"><img src="./321_files/3a20893be7f97768a454685196f51e94.jpg">Viewer点击弹出大图<span>Viewer.js 点击图片弹出大图，这款js插件算市面上比较完美、功能全、兼容性好的。不依赖jQuery。</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/33"><img src="./321_files/c5d8559ea0c0bbf4ba25a449c15a4c2e.jpg">[Xso]至强•邀请码注册<span>让网站使用邀请码注册</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/129"><img src="./321_files/37e7c7f3ec8c20f5ad4af9cf299c9c23.jpg">【下架插件】<span>这是一款充值插件，可以充值论坛金币，支持移动端支付和电脑支付，使用爱支付平台开发，支持支付宝，QQ钱包，微信支付，财付通</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/165"><img src="./321_files/a40d3ec4fb494b1b02fadf184385f61c.jpg">游客访问隐藏帖子内容<span>针对游客隐藏帖子内容。该插件会影响SEO收录，因为蜘蛛也是游客！文章内容隐藏蜘蛛无法获取文章内容</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/1"><img src="./321_files/3af8f66442ec369aa4748c23c1f521a3.jpg">Simditor编辑器<span>Simditor 富文本编辑器, 支持多选图片上传, 视频连接插入, HTML代码编辑以及常用富文本按钮</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/167"><img src="./321_files/a6bfc8ce458ffe126923ea6ef6eba513.jpg">ND_SiteMap<span>一键生成stiemap</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/16"><img src="./321_files/37179e27300aafd6fe58787c2702da56.jpg">侧边栏在线用户<span>在侧边栏展示展示论坛在线用户列表, 已用户头像样式展示</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/24"><img src="./321_files/3435597302e85c4d52389095d42b4d34.jpg">luosimao人机验证码<span>luosimao 点击验证码</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/6"><img src="./321_files/bcad0a932dcdb8ad4c47a05bc2434667.jpg">关闭注册用户<span>该插件用于 关闭论坛的新用户注册, 开启插件即可.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/56"><img src="./321_files/22a1e6b4d829aafd7d90e876ac9a36a3.jpg">访客统计面板<span>统计PV,独立IP,PC端,移动端记录</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/79"><img src="./321_files/7c7a68e9d1829b0c5ea2c41f033c6d71.jpg">表白墙配置插件<span>配置插件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/62"><img src="./321_files/c6338e1ba28277c88eea7e01ab964c11.jpg">百度 UEditor<span>百度编辑器完整版 内核版本:1.4.3.3. 仅用于PC</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/119"><img src="./321_files/fdf3a6f153c8cd3cbba43f3e58a693c9.jpg">渲染上传图片加水印<span>上传图片添加水印 支持图片及文本水印！功能强大，支持jpg、png、gif三种图片文件加水印！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/141"><img src="./321_files/f2532d474bc0c68e6183dafa555e1811.jpg">网站全局回顶和回最底部<span>​网站内点击按钮可以一键回到最顶部或者回到最底部！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/17"><img src="./321_files/0f65cda55123954952b5c6f832a9b45c.jpg">robots文件编辑<span>编辑你网站的robots文件</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/3"><img src="./321_files/e683ffead4de9da53f406078127c45dd.jpg">聊天室<span>无SQL操作的在线聊天室, 采用缓存系统储存, 效率取决于你的缓存类型.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/125"><img src="./321_files/7c24c455b2a26ca8881b370bbfd9bcae.jpg">[Xso]至强•用户组购买<span>使用金币购买用户组.测试版惊喜售价35元,正式版售价55元.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/134"><img src="./321_files/7f2c487adace93f20cb4baf3fe1a1d65.jpg">ND-自定义图片<span>手机端用户中心自定义图片</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/32"><img src="./321_files/a0817235131ae66ad4a0a3a6123d17e1.jpg">[Xso]至强•打赏<span>打赏插件，用户可以打赏发帖人，极大的提高用户发帖积极性。当前版本V1.d,该版本仅支持HYBBS2.0及以上版本,低于该版本的请勿升级.</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/121"><img src="./321_files/f736443b51678eec97a532f80419c6c3.jpg">渲染帖子部分内容隐藏<span>隐藏帖子内部分内容 支持过滤用户组，支持付费、登陆、回复可见内容。强大的管理后台，指定版块可用，支持特权用户组跳过。功能强大！</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/30"><img src="./321_files/4093b96923145bfa18d58b831bee4281.jpg">[Xso]至强•卡密充值<span>卡密充值</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/7"><img src="./321_files/1e33c26a8985f64617e0595a1c708d26.jpg">首页4栏<span>包含幻灯片,每周浏览最高主题,每周回复最多主题以及赞最多</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/15"><img src="./321_files/8783022cd91b1553927db859c537c5e5.jpg">侧边栏增加HTML代码<span>在侧边栏插入HTML代码</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/42"><img src="./321_files/c3f751905ebc5e6c2f7c02710b46b159.jpg">蜘蛛爬行记录<span>蜘蛛访问记录列表,记录每天蜘蛛来访次数, 记录蜘蛛爬行URL 以及来源来路URL .</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/19"><img src="./321_files/d71e4749be74e30da8532f122fe64323.jpg">sitemap网站地图TXT<span>生成TXT格式网站地图</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/20"><img src="./321_files/fc5bb748ec0d696950bb932bd629d83e.jpg">远程图片本地化<span>远程图片本地化, 将非本站图片保存为到本地, 可用关键字过滤不进行本地化的图片</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/97"><img src="./321_files/287fffe92cc51d453f805e00aca323be.jpg">附件对接阿里云<span>将用户上传的所有附件图片等丢到阿里云OSS</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/41"><img src="./321_files/cb4a2faf7a794e3f2a9a745de35bdb11.jpg">HY移动编辑器<span>手机移动设备编辑器,支持附件,图片上传,表情,以及插入视频地址</span></a></li><li><a target="_blank" href="http://app.hyphp.cn/app/71"><img src="./321_files/b2e82bd623e6e8706fbc3148e412deb1.jpg">用户自助广告<span>用户自助广告 可以自己使用金币去上架广告 续费广告</span></a></li></ul>
-	</div>
-</div>
-<style type="text/css">
-#xad{
-	height: 500px;
-	overflow-y:auto;
-}
-#xad1{overflow-y:auto;}
-	#xad ul,#xad li,#xad1 ul,#xad1 li{
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	#xad ul a,#xad1 ul a{
-		padding: 10px;
-		display: block;
-		color: #333;
-	    font-size: 13px;
-	    line-height: 1.5;
-	}
-	#xad ul img,#xad1 ul img{
-		margin-right: 10px;
-		vertical-align: middle;
-		width: 42px;
-    	height: 42px;
-		float: left;
-	}
-	#xad ul span,#xad1 ul span{
-		display: block
-	}
-
-</style>
-<script type="text/javascript">
-	$(function(){
-		var html='';
-		$.getJSON('http://app.hyphp.vip/json/server_json?jsoncallback=?',function(e){
-			
-			for(o in e.data){
-				//console.log(e.data[o]);
-				html+='<li><a target="_blank" href="http://app.hyphp.cn/app/'+e.data[o].id+'"><img src="http://app.hyphp.cn/app/'+e.data[o].name2+'/'+e.data[o].icon+'">'+e.data[o].name+'<span>'+e.data[o].ab+'</span></a></li>';
-				
-			}
-			$('#code-count').text(e.data.length);
-			$("#xad ul").html(html);
-		});
-		
-	});
-</script>
-<script type="text/javascript">
-	$(function(){
-		var html='';
-		$.getJSON('http://app.hyphp.vip/json/server_json1?jsoncallback=?',function(e){
-			
-			for(o in e.data){
-				//console.log(e.data[o]);
-				html+='<li><a target="_blank" href="http://app.hyphp.cn/app/'+e.data[o].id+'"><img src="http://app.hyphp.cn/app/'+e.data[o].name2+'/'+e.data[o].icon+'">'+e.data[o].name+'<span>'+e.data[o].ab+'</span></a></li>';
-				
-			}
-			$("#xad1 ul").html(html);
-		});
-		
-	});
-</script>
-
-<div class="right-widget only-logo">
-	<div class="head">
-		RSS订阅
-	</div>
-	<div style="padding:14px">
-		<a href="http://bbs.hyphp.cn/rss.html" title="rss订阅" target="_blank"><img src="./321_files/rss.jpg" width="50" height="50"></a>
-	</div>
-	
-</div>
-
-<div class="right-widget only-logo">
-	<div class="head">
-		在线会员 (0) <a href="javascript:void(0)" class="pull-right"><span class="icon icon-cog icon-lg"></span></a>
-	</div>
-	<div style="padding:14px">
-				<div style="clear: both;"></div>
-	</div>
-	<style type="text/css">
-	.hy-rigth-avatar{
-		width: 50px;
-	    height: 50px;
-	    
-		float: left;
-	    margin: 0;
-	    padding: 0;
-	    padding-right: 4px;
-	        padding-bottom: 5px;
-	}
-
-	.hy-rigth-avatar img{
-		margin:0;
-		padding: 0;
-	}
-	</style>
-</div>
-
-
-	<div class="right-widget only-logo">
-		<div class="head">
-			站点统计 <a href="javascript:void(0)" class="pull-right js-tooltip"><span class="icon icon-cog icon-lg"></span></a>
-		</div>
-		<div class="items grid">
-				<p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">站点主题：3645</p>
-				<p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">站点帖子：27056</p>
-				<p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">站点用户：16160</p>
-				<p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">今日主题：0</p>
-				<p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">今日帖子：6</p>
-				<p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">今日注册：3</p>
-			
-				<p style="padding:10px">运行耗时：0.0054 s</p>
-		</div>
-	</div>
-	
-    </div>
-        <div class="clearfix"></div>
-</div>
-<footer>
-    <div class="container">
-        <div class="version">
-            <p>HYBBS © 2016. All Rights Reserved. <a href="http://bbs.hyphp.cn/">HYBBS</a> </p>
-            <p>Powered by <a href="http://bbs.hyphp.cn/">HYBBS</a> Version 2.3.4</p>
+                            <span class="sr-only">90%</span>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="right-widget only-logo">
+                <div class="head">
+                    HYBBS最新上传插件
+                </div>
+                <div id="xad1">
+                    <ul>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/167"><img src="./321_files/a6bfc8ce458ffe126923ea6ef6eba513.jpg">ND_SiteMap<span>一键生成stiemap</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/165"><img src="./321_files/a40d3ec4fb494b1b02fadf184385f61c.jpg">游客访问隐藏帖子内容<span>针对游客隐藏帖子内容。该插件会影响SEO收录，因为蜘蛛也是游客！文章内容隐藏蜘蛛无法获取文章内容</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/164"><img src="./321_files/35a58572a333b8a12e17f8d263a4b41c.jpg">又拍云储存<span>把网站图片和附件上传到又拍云储存</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/161"><img src="./321_files/ba636c5449cc12af3f5ca238883f1ec0.jpg">ND-虚拟数据<span>虚拟数据插件,新发的帖,阅读数据会按照设定的两个数字区间进行随机生成阅读数</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/160"><img src="./321_files/460c65dbcae921a46fd1389cd53b0e49.jpg">邮件发送增强<span>插件用于无法使用25端口发信的服务器，基于PHPMailer-6.1.1开发。​​</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-widget only-logo">
+                <div class="head">
+                    HYBBS插件库 (<span id="code-count">118</span>)
+                </div>
+                <div id="xad">
+                    <ul>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/93"><img src="./321_files/6831c6796c5df4fafe63742d8819a57a.jpg">邮箱登陆<span>可以使用邮箱直接登陆</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/149"><img src="./321_files/f1e2ec247d331ea72e8d4cd8fa4d21dc.jpg">[星盟]帖子版权声明<span>这是一个在帖子页面内容的最下方添加版权声明+页面访问二维码的插件，支持电脑和手机双端显示！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/127"><img src="./321_files/dc5ac04d2a064e9c48af12fb08d03a73.jpg">ND-编辑器<span>采用wangeditor开源编辑器实现,轻量级代码,加载很快,支持上传图片缩略图。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/52"><img src="./321_files/6d4602b83f64e715e0498a8d2d766433.jpg">[ZG]微信助手<span>不懂为什么,就是想写个微信插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/31"><img src="./321_files/9e8ecf4eff1382bfaada4db93bc01321.jpg">[ZG]至强·视频播放V1<span>视频播放,目前支持优酷,土豆,QQ三大平台,支持多种视频格式</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/25"><img src="./321_files/7a483da26463bb456810a32e825618fe.jpg">prismjs代码高亮<span>prismjs高亮插件适用于Simditor插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/103"><img src="./321_files/c82a12efc6fd6bd392cdef7a46d4fa0b.jpg">自定义置顶前缀<span>hybbs.tlmsu.com自定义置顶前缀</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/126"><img src="./321_files/9c6a6f431be7ea0563241b3b970ad4c5.jpg">SMTPmail邮件发送插件<span>SMTPmail邮件发送插件,不能发邮件的看过来</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/107"><img src="./321_files/2d13e2dbd4549fac020bd7a40f37c5f9.jpg">部分内容隐藏购买<span>部分内容隐藏购买显示，格式为：隐藏开始（此处内容隐藏）隐藏结束</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/18"><img src="./321_files/c17a0432c79569fde5ecaac28b2ad2de.jpg">RSS<span>RSS2.0 XML标签,该插件有助于SEO以及主题订阅</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/114"><img src="./321_files/c05ac0a1d427324fe9d60911a91056dc.jpg">帖子加精<span>帖子加精！论坛必备插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/94"><img src="./321_files/e6857f763cf076897f9f27faca8cbb6c.jpg">用户名修改<span>用户可以自己修改用户名，从此彻底摆脱单一用户名。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/142"><img src="./321_files/7eead6675ff9bb0cd35ff7762fa0bb4c.jpg">ND-码支付[已下架]<span>扫码支付插件,论坛充值.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/90"><img src="./321_files/3ff192554d404062634d6860f19298c8.jpg">超时禁止回帖<span>将一些时隔已久的老帖子设置禁止回帖</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/72"><img src="./321_files/7e82aae8127451b5265ba065a6018ff1.jpg">微信登陆<span>微信登陆</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/82"><img src="./321_files/7da1def14f161c66cafa79c4db2b26ab.jpg">主题列表缩略图 - 官方模板<span>主题列表显示缩略图</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/137"><img src="./321_files/92eab5eaf3f9e5fac901062a5fba9cd8.jpg">M-TOUCH管理插件<span>M-TOUCH多色手机模板管理插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/139"><img src="./321_files/11e3fa1490aa6db2a55169930da13c34.jpg">网站标题改变<span>给你的网站加一个动态标题效果</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/164"><img src="./321_files/35a58572a333b8a12e17f8d263a4b41c.jpg">又拍云储存<span>把网站图片和附件上传到又拍云储存</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/83"><img src="./321_files/de9083c0663ff62794a21d2d5251ce9d.jpg">文章采集入口<span>文章采集入口接口. 提供一个POST写入方法. 采集API阉割发帖部分功能, 仅保留原生发帖功能! 使用说明看插件配置!</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/91"><img src="./321_files/a512f082c6236e1bd4da7c80633a2fa9.jpg">友情链接<span>从插件配置中配置友情链接,友情链接显示在右侧侧边栏</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/160"><img src="./321_files/460c65dbcae921a46fd1389cd53b0e49.jpg">邮件发送增强<span>插件用于无法使用25端口发信的服务器，基于PHPMailer-6.1.1开发。​​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/23"><img src="./321_files/442409c83f0f56ed93fc1e8940e9db36.jpg">新浪登录<span>新浪微博登录插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/117"><img src="./321_files/f05c2366f76eef81bdb9ef0bec27ed85.jpg">屏蔽回帖<span>屏蔽帖子相关回帖。适用模板hy_boss与手机版。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/161"><img src="./321_files/ba636c5449cc12af3f5ca238883f1ec0.jpg">ND-虚拟数据<span>虚拟数据插件,新发的帖,阅读数据会按照设定的两个数字区间进行随机生成阅读数</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/155"><img src="./321_files/e212a66658c0358849e8a447fce9c968.jpg">[星盟]漂浮广告<span>这是一个在网站内漂浮并自动显示图片类型(可手动点击关闭显示的广告图片)的广告插件，手机版目前正在开发中，和电脑版可能会是不同的样式！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/8"><img src="./321_files/49737d2938dfe9a448e0942c36c958bb.jpg">分页按钮改为数字<span>替换官网模板上下页分页,改为数字按钮</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/133"><img src="./321_files/f5b8c321f18620d76be17107bfe38e9d.jpg">ND-腾讯短信SMS<span>腾讯短信SMS,给网站增加短信注册功能.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/50"><img src="./321_files/70dcf65c2a8767018a6cf7753f67dcd2.jpg">显示子版块帖子<span>显示板块下 所有子版块的帖子, 所有子分类</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/77"><img src="./321_files/74d087819f6553fa510e8f28c9a8ec31.jpg">随机怪兽头像<span>随机怪兽头像，新注册用户将生成一个随机头像。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/10"><img src="./321_files/957c97e914b77b2910ff49abafae8f5d.jpg">QQ登录<span>QQ授权快捷登录, 必须绑定论坛账号,或新注册并绑定.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/100"><img src="./321_files/4889f9e8d9c70ec473bd35e17710a6b4.jpg">web原生分享<span>可以强制唤醒app和调用浏览器分享，支持主流浏览器，分享效果和原生app近乎一样仅支持官方模版和提拉米苏模版。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/128"><img src="./321_files/3150f48ecc03855bec09c71a354c72eb.jpg">失效下架<span>使用BL免签约支付制作的插件，​提现时BL会收取3%的手续费。支持支付宝，微信，QQ付款，本插件的主要功能时充值金币。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/86"><img src="./321_files/e130970dad39e9c3d92baeedaa2e8f99.jpg">[Xso]至强•收藏帖子<span>收藏帖子，论坛必备插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/108"><img src="./321_files/720802cbfb102cc7558a32a9d623e675.jpg">极验验证 APP版<span>​极验验证码,拖动式验证码, 手机APP专用, 配置必须使用geetest3.0 KEY, 否则无法使用!​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/37"><img src="./321_files/083ba363d4f1f527dc0a583bb6e72d67.jpg">[Xso]至强•回帖广告<span>完美的广告位</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/85"><img src="./321_files/6b349bc87278946f3bb36e74e56b174f.jpg">Syntax代码高亮<span>SyntaxHighlighter代码高亮, 自动检测文章是否存在需要高亮代码才加载插件!</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/140"><img src="./321_files/1cbdee12ef3ed810db1d7a2374d5b090.jpg">[星盟]自动生成二维码<span>开启这个插件后，每一个页面都将自动生成一个随机的二维码，通过手机扫一扫即可访问页面！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/88"><img src="./321_files/5b2a30ca4cad9132c3f0ccd7710086e0.jpg">2.0升级固件<span>如果你是1.0版本需要升级到2.0版本,请下载该插件并开启他,回到后台首页,就会提示2.0升级</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/44"><img src="./321_files/4b6f1a4c873fa1fc015acf95b907b01f.jpg">3D仿真云背景<span>3D仿真云背景, 跟随鼠标飘动. 该插件会造成页面出现卡顿! 慎用. 由于太过于屌</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/66"><img src="./321_files/c5172ba491e9abf2d8db64887ab9db3b.jpg">支付宝充值<span>支付宝官方充值接口 充值论坛金币</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/95"><img src="./321_files/f28e6dcd809109567489fd67d1f9640e.jpg">自定义验证码<span>自定义问题答案验证码</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/118"><img src="./321_files/5a7ef8b33b44d609ad5c222097bc7da9.jpg">附件管理器[已失效]<span>管理论坛上传的附件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/54"><img src="./321_files/982df09235924d2b3fc3b47f42347d43.jpg">多域名绑定手机域名绑定模板绑定域名<span>绑定多个域名到程序中. 并且访问时 也会使用进入时的域名, 并且可以对模板进行域名绑定,</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/123"><img src="./321_files/ca3c42fbfd8bec6c909466033beee0dc.jpg">屏蔽IP发帖<span>设置IP禁止发帖，包括无法发表主题，评论，子评论！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/159"><img src="./321_files/a68eda7615027e98b353f7471cca7647.jpg">帖子回收站<span>帖子回收站，前台删除的主题、评论，会进入后台帖子回收站，需要管理员再次进行删除处理。防止用户、版主，误删帖子！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/67"><img src="./321_files/bc5f1e466201d743fff22335793daadd.jpg">压缩上传图片<span>压缩上传图片, 支持云储存, 多图上传, 兼容水印插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/68"><img src="./321_files/4eff7a3837811c1850296b5f7d8d26c5.jpg">上传图片添加水印<span>上传图片添加水印 支持云储存 与压缩图片插件兼容</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/111"><img src="./321_files/daeb8ce97b4c40a27f3ed2fc0b618106.jpg">官方手机APP编辑器<span>手机APP编辑器​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/4"><img src="./321_files/63b99973af33fa94c3a04adc2c3ec236.jpg">图形验证码<span>​图片字母数字验证码,</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/116"><img src="./321_files/4c01009515ff4b035362648bbe2f23b0.jpg">图片懒加载<span>帖子列表懒加载，降低服务器压力，提升用户加载网站速度，并且将移动端图片显示到主题内容下方。目前暂只支持官方移动端模版和提拉米苏模版。特别鸣谢@哄自己玩</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/5"><img src="./321_files/a15c331a2368782a52f47794966d4f3c.jpg">极验<span>极验验证码,拖动式验证码,支持移动端使用,支持用户登录,注册,发表文章以及评论,编辑文章评论显示验证码</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/2"><img src="./321_files/70a66e103b48c9779e0e29e1f9cbc272.jpg">百度推送<span>百度链接提交接口开发的链接推送,每当发表新文章,该文章链接将推送到百度接口,提高收录速度与准确性</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/147"><img src="./321_files/b601dc0b2a74f64e5d4f96f0f3f6a99e.jpg">游客隐藏帖子内容[失效下架]<span>游客隐藏帖子详情插件！针对未注册的游客隐藏全部帖子内容详情！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/148"><img src="./321_files/1f018f8c2d7d75d43cbb9988f09a6a4c.jpg">[星盟]网站右侧工具栏<span>这是一个在在网站右侧显示的右侧工具栏插件（可以放置微信公众号、QQ群号等）！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/92"><img src="./321_files/72db2aaa2f7ddcc8336081d18a8c89ee.jpg">隐藏部分内容<span>​帖子隐藏部分内容 支持过滤用户组,管理员,版主</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/113"><img src="./321_files/cecd3cca7d79d317db1edb2ab69ee71e.jpg">HYBBS 手机APP客户端引擎<span>​HYBBS 手机APP客户端引擎</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/12"><img src="./321_files/510b5f2a65594a333230cdd7d25b33fc.jpg">侧边栏幻灯片<span>侧边栏上的幻灯片 自动切换 圆点小按钮 展示最新回复带有图片的主题</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/14"><img src="./321_files/97d2ff7b6f11876fe0b9cbe8948393fa.jpg">侧边栏-站点统计<span>在侧边栏显示你的站点主题用户帖子数量,今日主题帖子注册用户</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/89"><img src="./321_files/b92c43ba560b4bf33e4a797561f694e5.jpg">超时禁止编辑<span>​文章，评论超过某个设定时间禁止编辑​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/152"><img src="./321_files/c911aaa45fdc85b8828f764c101c13f7.jpg">[星盟]复制内容自动添加版权<span>​这是一个在帖子页面复制了内容后，粘贴到其他地方会自动在内容最后面添加版权声明的插件​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/151"><img src="./321_files/26c2389829255980dac2bd3dd57e402b.jpg">积分兑换物品插件<span>​积分兑换物品!一款让你网站的用户花费一些金币来兑换自己喜欢的物品!</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/21"><img src="./321_files/a3d9894ebc0206e8cafec4edacda76b5.jpg">文章图片点击内部大图<span>在文章页面中,使用鼠标点击图片进行拖动放大</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/145"><img src="./321_files/9ec7cad05f3130fbde1693667c43749e.jpg">HY-MEditor编辑器<span>移动端手机版发表帖子需要用到的富文本编辑器</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/22"><img src="./321_files/2eeeb0e1782b44f0b18d6eb29a382681.jpg">上传图片生成缩略图(勿下)(已失效)<span>对上传图片增加缩略图操作, 每当上传图片都会新建一个自定义尺寸的图片保存</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/65"><img src="./321_files/2149a214bfab061984b66e24e82a25f2.jpg">[ZG]至强•音乐播放<span>至强系列第二个插件,目前仅支持网易云音乐地址,直接在发帖的时候填入网易云音乐地址即可.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/150"><img src="./321_files/2775a1b1df406d7979184354f0c7c2e0.jpg">管理员后台SQL执行<span>后台添加功能 可以运行SQL 便捷管理员操作​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/9"><img src="./321_files/b18864a282b291ea77f7c09ca72b04ac.jpg">七牛云储存<span>对上传图片以及附件转至七牛云储存</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/11"><img src="./321_files/5bab5f4dc5c8633c266dad80200c5960.jpg">用户随机头像<span>用户随机头像，在用户注册账号后取用户名第一位生成头像</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/144"><img src="./321_files/fe26081c5206b565e9d9b3b2fe289401.jpg">HY-Editor编辑器<span>HYBBS默认电脑版发帖编辑器，发表帖子需要用到的富文本编辑器</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/158"><img src="./321_files/4be4bef4364736e521bc30611f48bcd5.jpg">网站底部信息<span>这是一个开启后可以在网站最底部显示底部信息插件，可以显示网站信息，友情链接，设置网站统计，并支持自定义底部背景颜色！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/63"><img src="./321_files/b4d528e23335481f22a03be7dae12521.jpg">百度 UMeditor<span>百度编辑器 迷你版 内核版本:1.2.2 仅用于PC</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/29"><img src="./321_files/cc51cf46963ac0f3b2244a4f15891974.jpg">[Xso]至强•签到<span>每日签到,论坛必备插件,目前版本已经是V1.e,该版本仅仅支持2.0以上的论坛版本,如果你的版本低于2.0,请不要升级</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/75"><img src="./321_files/5f298d5394fb47cfd170f927c85ed7aa.jpg">微信支付<span>微信支付充值金币 支持扫码支付 公众号充值​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/13"><img src="./321_files/c63f810c293b0e921f2cab7891c775b6.jpg">侧边栏-板块列表<span>侧边栏显示你的板块与子版块, 显示板块图标, 方格块展示</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/110"><img src="./321_files/f47f3c37d31e47dcaded405d414e86f6.jpg">阿里云短信服务<span>支持手机号码登录、找回密码、绑定、回帖提醒、回复提醒</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/84"><img src="./321_files/01295b0940b712f1ade1bb2fb2336854.jpg">[ZG]至强•会员推广<span>使会员生成推广链接，其他用户使用链接注册增加积分</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/70"><img src="./321_files/c23fac24e4083b7c682ab9daf3e78a98.jpg">提现<span>金币提现</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/61"><img src="./321_files/f3752fa13e9bb92361a537b5e48d560c.jpg">多语言切换按钮<span>​​​目前插件仅支持PC官方模板, 必须拥有多语言支持的框架版本</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/69"><img src="./321_files/9d1d1fdd235eb35322d498c17ce98fe1.jpg">悬赏帖子<span>悬赏帖子</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/157"><img src="./321_files/162e590f8dc2a86b19d2018783c3cc2d.jpg">Opcache管理<span>插件用于管理Opcache缓存，如果您没有安装Opcache扩展，请勿安装该插件！插件支持库来源于github amnuts/opcache-gui</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/153"><img src="./321_files/b3c259a192b5d2db75a2b489b0afe4bf.jpg">更好的下载页面<span>​下载文件打开一个新的页面下载,你可以尽情的在这里添加文件广告,上下左右,提供广告收益!​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/124"><img src="./321_files/9bf6bea31a0fac98022cfecdb64d4631.jpg">帖子过滤关键字<span>过滤发表主题，评论，子评论敏感关键字</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/51"><img src="./321_files/c1445265f5cc81ec274b24b6428a87d0.jpg">最新回复排最新<span>将最新回复的帖子置新 将筛选条件调换</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/154"><img src="./321_files/4b163c0574e1742193ebacbaf63e7ff6.jpg">渲染采集器<span>渲染采集器!一款多功能内容采集工具!支持网络技术教程、攻略、软件游戏等资源采集!超多资源帖,超多内容! 还支持微信文章采集!后期随着版本的更新!将会增加更多资源采集希望</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/135"><img src="./321_files/0ad2c1cc0c3ef8f1ed8b18b08b665496.jpg">ND-腾讯COS<span>腾讯COS对象储存</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/87"><img src="./321_files/b83a62ac0971f703c3eac103a17dedc8.jpg">[ZG]至强•防灌水<span>限制用户发帖和回帖的时间，论坛防灌水必备插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/53"><img src="./321_files/e612cebde517e9e279c41a8768abc0f2.jpg">主题点赞用户名列表<span>在文章页面点赞记录点赞者, 并显示一个列表在文章下面​</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/146"><img src="./321_files/5f55dde2270f384b973fcf12c7afedcf.jpg">全局通告栏<span>全局通告内容，可多行显示！详情或者使用中有任何问题请到花花的博客反馈！： 花花HYBBS插件之----全站通告栏插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/156"><img src="./321_files/3a20893be7f97768a454685196f51e94.jpg">Viewer点击弹出大图<span>Viewer.js 点击图片弹出大图，这款js插件算市面上比较完美、功能全、兼容性好的。不依赖jQuery。</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/33"><img src="./321_files/c5d8559ea0c0bbf4ba25a449c15a4c2e.jpg">[Xso]至强•邀请码注册<span>让网站使用邀请码注册</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/129"><img src="./321_files/37e7c7f3ec8c20f5ad4af9cf299c9c23.jpg">【下架插件】<span>这是一款充值插件，可以充值论坛金币，支持移动端支付和电脑支付，使用爱支付平台开发，支持支付宝，QQ钱包，微信支付，财付通</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/165"><img src="./321_files/a40d3ec4fb494b1b02fadf184385f61c.jpg">游客访问隐藏帖子内容<span>针对游客隐藏帖子内容。该插件会影响SEO收录，因为蜘蛛也是游客！文章内容隐藏蜘蛛无法获取文章内容</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/1"><img src="./321_files/3af8f66442ec369aa4748c23c1f521a3.jpg">Simditor编辑器<span>Simditor 富文本编辑器, 支持多选图片上传, 视频连接插入, HTML代码编辑以及常用富文本按钮</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/167"><img src="./321_files/a6bfc8ce458ffe126923ea6ef6eba513.jpg">ND_SiteMap<span>一键生成stiemap</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/16"><img src="./321_files/37179e27300aafd6fe58787c2702da56.jpg">侧边栏在线用户<span>在侧边栏展示展示论坛在线用户列表, 已用户头像样式展示</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/24"><img src="./321_files/3435597302e85c4d52389095d42b4d34.jpg">luosimao人机验证码<span>luosimao 点击验证码</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/6"><img src="./321_files/bcad0a932dcdb8ad4c47a05bc2434667.jpg">关闭注册用户<span>该插件用于 关闭论坛的新用户注册, 开启插件即可.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/56"><img src="./321_files/22a1e6b4d829aafd7d90e876ac9a36a3.jpg">访客统计面板<span>统计PV,独立IP,PC端,移动端记录</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/79"><img src="./321_files/7c7a68e9d1829b0c5ea2c41f033c6d71.jpg">表白墙配置插件<span>配置插件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/62"><img src="./321_files/c6338e1ba28277c88eea7e01ab964c11.jpg">百度 UEditor<span>百度编辑器完整版 内核版本:1.4.3.3. 仅用于PC</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/119"><img src="./321_files/fdf3a6f153c8cd3cbba43f3e58a693c9.jpg">渲染上传图片加水印<span>上传图片添加水印 支持图片及文本水印！功能强大，支持jpg、png、gif三种图片文件加水印！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/141"><img src="./321_files/f2532d474bc0c68e6183dafa555e1811.jpg">网站全局回顶和回最底部<span>​网站内点击按钮可以一键回到最顶部或者回到最底部！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/17"><img src="./321_files/0f65cda55123954952b5c6f832a9b45c.jpg">robots文件编辑<span>编辑你网站的robots文件</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/3"><img src="./321_files/e683ffead4de9da53f406078127c45dd.jpg">聊天室<span>无SQL操作的在线聊天室, 采用缓存系统储存, 效率取决于你的缓存类型.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/125"><img src="./321_files/7c24c455b2a26ca8881b370bbfd9bcae.jpg">[Xso]至强•用户组购买<span>使用金币购买用户组.测试版惊喜售价35元,正式版售价55元.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/134"><img src="./321_files/7f2c487adace93f20cb4baf3fe1a1d65.jpg">ND-自定义图片<span>手机端用户中心自定义图片</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/32"><img src="./321_files/a0817235131ae66ad4a0a3a6123d17e1.jpg">[Xso]至强•打赏<span>打赏插件，用户可以打赏发帖人，极大的提高用户发帖积极性。当前版本V1.d,该版本仅支持HYBBS2.0及以上版本,低于该版本的请勿升级.</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/121"><img src="./321_files/f736443b51678eec97a532f80419c6c3.jpg">渲染帖子部分内容隐藏<span>隐藏帖子内部分内容 支持过滤用户组，支持付费、登陆、回复可见内容。强大的管理后台，指定版块可用，支持特权用户组跳过。功能强大！</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/30"><img src="./321_files/4093b96923145bfa18d58b831bee4281.jpg">[Xso]至强•卡密充值<span>卡密充值</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/7"><img src="./321_files/1e33c26a8985f64617e0595a1c708d26.jpg">首页4栏<span>包含幻灯片,每周浏览最高主题,每周回复最多主题以及赞最多</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/15"><img src="./321_files/8783022cd91b1553927db859c537c5e5.jpg">侧边栏增加HTML代码<span>在侧边栏插入HTML代码</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/42"><img src="./321_files/c3f751905ebc5e6c2f7c02710b46b159.jpg">蜘蛛爬行记录<span>蜘蛛访问记录列表,记录每天蜘蛛来访次数, 记录蜘蛛爬行URL 以及来源来路URL .</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/19"><img src="./321_files/d71e4749be74e30da8532f122fe64323.jpg">sitemap网站地图TXT<span>生成TXT格式网站地图</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/20"><img src="./321_files/fc5bb748ec0d696950bb932bd629d83e.jpg">远程图片本地化<span>远程图片本地化, 将非本站图片保存为到本地, 可用关键字过滤不进行本地化的图片</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/97"><img src="./321_files/287fffe92cc51d453f805e00aca323be.jpg">附件对接阿里云<span>将用户上传的所有附件图片等丢到阿里云OSS</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/41"><img src="./321_files/cb4a2faf7a794e3f2a9a745de35bdb11.jpg">HY移动编辑器<span>手机移动设备编辑器,支持附件,图片上传,表情,以及插入视频地址</span></a></li>
+                        <li><a target="_blank" href="http://app.hyphp.cn/app/71"><img src="./321_files/b2e82bd623e6e8706fbc3148e412deb1.jpg">用户自助广告<span>用户自助广告 可以自己使用金币去上架广告 续费广告</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <style type="text/css">
+            #xad {
+                height: 500px;
+                overflow-y: auto;
+            }
+
+            #xad1 {
+                overflow-y: auto;
+            }
+
+            #xad ul,
+            #xad li,
+            #xad1 ul,
+            #xad1 li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            #xad ul a,
+            #xad1 ul a {
+                padding: 10px;
+                display: block;
+                color: #333;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+
+            #xad ul img,
+            #xad1 ul img {
+                margin-right: 10px;
+                vertical-align: middle;
+                width: 42px;
+                height: 42px;
+                float: left;
+            }
+
+            #xad ul span,
+            #xad1 ul span {
+                display: block
+            }
+            </style>
+            <script type="text/javascript">
+            $(function() {
+                var html = '';
+                $.getJSON('http://app.hyphp.vip/json/server_json?jsoncallback=?', function(e) {
+
+                    for (o in e.data) {
+                        //console.log(e.data[o]);
+                        html += '<li><a target="_blank" href="http://app.hyphp.cn/app/' + e.data[o].id + '"><img src="http://app.hyphp.cn/app/' + e.data[o].name2 + '/' + e.data[o].icon + '">' + e.data[o].name + '<span>' + e.data[o].ab + '</span></a></li>';
+
+                    }
+                    $('#code-count').text(e.data.length);
+                    $("#xad ul").html(html);
+                });
+
+            });
+            </script>
+            <script type="text/javascript">
+            $(function() {
+                var html = '';
+                $.getJSON('http://app.hyphp.vip/json/server_json1?jsoncallback=?', function(e) {
+
+                    for (o in e.data) {
+                        //console.log(e.data[o]);
+                        html += '<li><a target="_blank" href="http://app.hyphp.cn/app/' + e.data[o].id + '"><img src="http://app.hyphp.cn/app/' + e.data[o].name2 + '/' + e.data[o].icon + '">' + e.data[o].name + '<span>' + e.data[o].ab + '</span></a></li>';
+
+                    }
+                    $("#xad1 ul").html(html);
+                });
+
+            });
+            </script>
+            <div class="right-widget only-logo">
+                <div class="head">
+                    RSS订阅
+                </div>
+                <div style="padding:14px">
+                    <a href="http://bbs.hyphp.cn/rss.html" title="rss订阅" target="_blank"><img src="./321_files/rss.jpg" width="50" height="50"></a>
+                </div>
+            </div>
+            <div class="right-widget only-logo">
+                <div class="head">
+                    在线会员 (0) <a href="javascript:void(0)" class="pull-right"><span class="icon icon-cog icon-lg"></span></a>
+                </div>
+                <div style="padding:14px">
+                    <div style="clear: both;"></div>
+                </div>
+                <style type="text/css">
+                .hy-rigth-avatar {
+                    width: 50px;
+                    height: 50px;
+
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                    padding-right: 4px;
+                    padding-bottom: 5px;
+                }
+
+                .hy-rigth-avatar img {
+                    margin: 0;
+                    padding: 0;
+                }
+                </style>
+            </div>
+            <div class="right-widget only-logo">
+                <div class="head">
+                    站点统计 <a href="javascript:void(0)" class="pull-right js-tooltip"><span class="icon icon-cog icon-lg"></span></a>
+                </div>
+                <div class="items grid">
+                    <p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">站点主题：3645</p>
+                    <p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">站点帖子：27056</p>
+                    <p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">站点用户：16160</p>
+                    <p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">今日主题：0</p>
+                    <p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">今日帖子：6</p>
+                    <p style="padding:5px 10px;font-size:16px;margin-bottom: 0px;" href="javascript:void(0)">今日注册：3</p>
+                    <p style="padding:10px">运行耗时：0.0054 s</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
     </div>
-</footer>
+    <footer>
+        <div class="container">
+            <div class="version">
+                <p>HYBBS © 2016. All Rights Reserved. <a href="http://bbs.hyphp.cn/">HYBBS</a> </p>
+                <p>Powered by <a href="http://bbs.hyphp.cn/">HYBBS</a> Version 2.3.4</p>
+            </div>
+        </div>
+    </footer>
+    <link href="./321_files/viewer.min.css" rel="stylesheet">
+    <script src="./321_files/viewer.js.下载"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        if (typeof document.getElementsByClassName('thread-content')[0] === 'object') {
+            new Viewer(document.getElementsByClassName('thread-content')[0]);
+        }
 
+        var jh = document.getElementsByClassName('post-content');
+        for (var o in jh) {
+            if (typeof jh[o] === 'object') {
+                new Viewer(jh[o]);
+            }
+        }
+    }
+    </script>
+    <ins class="darktooltip-modal-layer"></ins><ins id="darktooltip-undefined" class="dark-tooltip dark lg east animated flipIn" style="opacity: 0.9;">
+        <div><img src="./321_files/loading.gif"></div>
+        <div class="tip"></div>
+    </ins>
+</body>
 
-<link href="./321_files/viewer.min.css" rel="stylesheet">
-<script src="./321_files/viewer.js.下载"></script>
-<script type="text/javascript">
-	window.onload=function(){
-		if(typeof document.getElementsByClassName('thread-content')[0] === 'object'){
-			new Viewer(document.getElementsByClassName('thread-content')[0]);
-		}
-		
-		var jh = document.getElementsByClassName('post-content');
-		for(var o in jh){
-			if(typeof jh[o] === 'object'){
-				new Viewer(jh[o]);
-			}
-		}
-	}
-</script>
-
-
-<ins class="darktooltip-modal-layer"></ins><ins id="darktooltip-undefined" class="dark-tooltip dark lg east animated flipIn" style="opacity: 0.9;"><div><img src="./321_files/loading.gif"></div><div class="tip"></div></ins></body></html>
+</html>
